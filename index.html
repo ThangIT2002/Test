@@ -31,6 +31,7 @@
         <section class="header-nav">
             <div class="container">
                 <div class="header-nav-container">
+                    
                     <div class="header-nav-container-item item-1">
                         <div class="nav">
                             <ul>
@@ -64,6 +65,26 @@
                             </div>
                             <div class="favorite-button">
                                 <img src="asset/icon/heart 1.png" alt="favorite">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-nav-mobile">
+                        <div class="header-nav-mobile-item ">
+                            <div class="logo">
+                                <h1 class="sansita">KITO</h1>
+                            </div>
+                        </div>
+                        <div class="header-nav-mobile-item hamburger-container">
+                            <button class="hamburger-button" aria-label="Toggle menu">
+                                ☰
+                            </button>
+                            <div class="hamburger-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Page</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -262,7 +283,7 @@
                     <div class="newsletter">
                         <div class="newsletter-title">
                             <p>
-                                Join our list and get 20% off <br>
+                                Join our list and get 20% off 
                                 your first purchase!
                             </p>
                         </div>
@@ -314,7 +335,9 @@
                             <h4>Information</h4>
                             <ul>
                                 <li>
-                                    
+                                    <p>Privacy policy</p>
+                                </li>
+                                <li>
                                     <p>Refund policy</p>
                                 </li>
                                 <li>
@@ -353,4 +376,10 @@
         </section>
     </footer>
 </body>
+<script>
+    document.querySelector('.hamburger-button').addEventListener('click', function() {
+    const menu = document.querySelector('.hamburger-menu');
+    menu.classList.toggle('active');
+});
+</script>
 </html>
